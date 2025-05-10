@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | University Portal</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="rings-container">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <h1 class="welcome-message">
+            Welcome, <span class="username" id="username">Student</span>!
+        </h1>
+        <p class="university-name">National School of Cybersecurity</p>
+    </div>
+
+    <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('name') || 'Student';
+        document.getElementById('username').textContent = username;
+    </script>
+</body>
+</html>
