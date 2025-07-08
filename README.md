@@ -21,9 +21,7 @@ project/
 │   ├── new-password.html  
 │   └── new-password.css  
 └── assets/  
-Setup
-bash
-git clone [repository-url]  
+
 code project-folder  
 Usage
 Access password recovery
